@@ -1,0 +1,172 @@
+#+Title: Python Basic Training
+# +Author: Prasad Ghole
+#+Email: prasad.ghole@lnttechservices.com
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/ 
+#+REVEAL_THEME: night
+#+OPTIONS: toc:nil num:nil timestamp:nil 
+
+* Introduction
+
+* Hello World
+#+BEGIN_SRC python :results output :exports both :cache yes
+
+print("Hello World")
+
+#+END_SRC
+
+#+RESULTS[d736834cf46083fa689508e064e2b509fd42e6a6]:
+: Hello World
+
+
+* Zen of python
+#+BEGIN_SRC python :results output :exports both :cache yes 
+import this
+#+END_SRC
+
+#+RESULTS[a6e28f7cbe39bfb4e2c9b5c30eba680d6739b884]:
+#+begin_example
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+#+end_example
+
+
+* List
+A list is collection of items in perticular order.
+
+#+BEGIN_SRC python :results output :exports both :cache yes
+
+cities = ['mumbai', 'Delhi', 'calcutta','Çhennai']
+print(cities)
+
+#+END_SRC
+
+#+RESULTS[a392b3d14290f9e8ba84d70ff384564f35d16e84]:
+: ['mumbai', 'Delhi', 'calcutta', 'Çhennai']
+
+** Accessing elements of list
+   Index starts at 0 and not 1.
+** Modifying list element
+** Adding element to end of list
+** Inserting element in list
+** Removing element from list
+***  Using  del
+*** Using pop
+*** popping from any list
+** Removing item by value
+Remember about duplicate values only first will be removed.
+** Organizing list
+*** sort
+*** reverse sort
+*** Temporary sort
+*** Printing list in reverse order
+** Finding length of list
+** Iterating list
+#+BEGIN_SRC python :results output :cache yes 
+
+cities = ['mumbai', 'Delhi', 'calcutta','Çhennai']
+
+for citi in cities:
+   print(citi)
+
+#+END_SRC
+
+#+RESULTS[fc88c831986e118ce2148cde73ebf2dfcd92f36c]:
+: mumbai
+: Delhi
+: calcutta
+: Çhennai
+
+
+
+** Making numerical list
+#+BEGIN_SRC python :results output :exports both :cache yes 
+
+numbers = list(range(1,10))
+
+for n in numbers:
+    print(n)
+
+#+END_SRC
+
+#+RESULTS[cf385b1dce28e395219aa544fbe7cefeca14e027]:
+: 1
+: 2
+: 3
+: 4
+: 5
+: 6
+: 7
+: 8
+: 9
+
+#+BEGIN_SRC python :results output :exports both :cache yes 
+
+even_numbers = list(range(2,10,2))
+
+for n in even_numbers:
+    print(n)
+
+#+END_SRC
+
+#+RESULTS[8a6ebc519639e1f0a5cc7afed6517a37fba7bdd5]:
+: 2
+: 4
+: 6
+: 8
+
+** statistics of list
+** List comprehensions
+#+BEGIN_SRC python :results output :exports both :cache yes 
+
+squares = [ s**2 for s in range(1,11)]
+print(squares)
+
+#+END_SRC
+
+#+RESULTS[97c901e11769282ef4e70914bc9611f85615f527]:
+: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+** Slicing list
+** Iterating through sliced list
+k
+* if statements
+~
+if conditional statements :
+         do something
+~ 
+
+string comparison is case sensitive.
+
+#+BEGIN_SRC python :results output :exports both :cache yes 
+
+cities = ['mumbai', 'Delhi', 'calcutta','Çhennai']
+
+print('mumbai'  in cities);
+#+END_SRC
+
+#+RESULTS[fe5681edeb5bb5d147c4743deacd4fe0d161f2b5]:
+: True
+
+** if else
+** if elif else
+
+* Dictionaries
